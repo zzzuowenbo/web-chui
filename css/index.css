@@ -1,0 +1,84 @@
+/*导航栏一开始*/
+.daohang1{
+	height:45px;
+	background:#262729;
+}
+.daohang1 .left{
+	width:182px;
+	height:100%;
+	float:left;
+	position:relative;
+}
+.daohang1 .left1{
+	width: 20px;
+	height:20px;
+	border:1px solid #dcdbdc;
+	line-height:20px;
+	text-align:center;
+	border-radius:50%;
+	background:#dcdbdc;
+	position:absolute;
+	top:13px;
+	left:21px;	
+}
+.daohang1 .center{
+	width:1222px;
+	height:45px;
+	float:left;
+}
+.daohang1 .center li{
+	float:left;
+	line-height:45px;
+	text-align: center;
+	margin-left: 39px;
+	font-size:11px;
+	color:#c1c2c2;
+}
+.daohang1 .center li:first-child{
+	margin-left:170px;
+	color:#fff;
+}
+.daohang1 .center li:hover{
+	color:#fff;
+	cursor:pointer;
+}
+.daohang1 .right{
+	width: 181px;
+	height:100%;
+	float:right;
+	background:blue;
+}
+/*导航栏一结束*/
+
+/*导航栏二开始*/
+/*导航栏二结束*/
+
+/*展示区开始*/
+/*展示区结束*/
+
+/*热门商品区域开始*/
+/*热门商品区域结束*/
+
+/*坚果手机及配件区域开始*/
+/*坚果手机及配件区域结束*/
+
+/*官方精选区域开始*/
+/*官方精选区域结束*/
+
+/*净化器及其配件区域开始*/
+/*净化器及其配件区域结束*/
+
+/*品牌周边区域开始*/
+/*品牌周边区域结束*/
+
+/*品牌精选区域开始*/
+/*品牌精选区域结束*/
+
+/*论坛精选区域开始*/
+/*论坛精选区域结束*/
+
+/*尾部导航栏开始*/
+/*尾部导航栏结束*/
+
+/*尾部结束开始*/
+/*尾部结束结束*/
