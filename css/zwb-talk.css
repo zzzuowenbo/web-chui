@@ -3,7 +3,7 @@
 	width: 100%;
 	/*height: 100px;*/
 	/*background: pink;*/	
-	position: relative;
+	/*position: relative;*/
 }
 .header .top{
 	width: 100%;
@@ -18,6 +18,7 @@
 .header .top .right{
 	float: left;
     margin-left: 474px;
+    position: relative;
 }
 .header .top .list{
 	/*height: 60px;*/
@@ -51,38 +52,41 @@
 	text-decoration: underline;	
 }
 .header .area{
-	width: 100%;
-	background: pink;
+	width: 1349px;
+	background: #fafafa;
 	position: absolute;
 	top: 60px;
-	left: 0;	
-	/*height: 0;*/
-	/*overflow: hidden;*/
-	/*z-index: 10;*/
-	display: none;
+	left: -618px;	
+	border-bottom: 1px solid #dcdcdc;
+	overflow: hidden;
+	z-index: 10;
+	height: 0;
 }
-/*.header .top .right .list .bd:hover .area{
-    height: 485px;
-}*/
+.header .top .right .list .bd:hover a{
+    font-weight: bold;
+}
+.header .top .right .list .bd:hover > .area{
+    height: 536px;
+}
 .header .area ul{
 	float: left;
 	margin-left: 80px;
-	margin-top: 52px;
+	margin-top: 38px;
 }
 .header .area ul:first-child{
 	margin-left: 270px;
 }
 .header .area h1{
 	font-weight: bold;
-	margin-bottom: 26px;
+	margin-bottom: -12px;
 	cursor: pointer;
 }
-.header .area a{
+.header .right .area a{
 	font-size: 14px;
 	color: #757575;
 }
 .header .area ul li{
-	margin-bottom: 14px;
+	margin-bottom: -22px;
 }
 .header .area div{
 	width: 1px;
