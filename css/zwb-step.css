@@ -270,7 +270,7 @@
 	left: 580px;
 	z-index: 10;
 }
-.content .kind .dot .dot-item{
+.content .kind .dot li{
 	float: left;
 	width: 10px;
 	height: 10px;
@@ -279,7 +279,7 @@
 	background: #e5e5e5;
 	cursor: pointer;
 }
-.content .kind .dot .dot-item:first-child{
+.content .kind .dot .active{
 	background: #666;
 }
 /*点击跳转图片通用内容结束*/

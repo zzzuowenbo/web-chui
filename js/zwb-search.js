@@ -1,6 +1,7 @@
 // 搜索下拉框开始
 var oSelect = document.getElementById('select');
 var oClick = document.getElementById('click');
+console.log(oClick);
 oClick.onclick = function(){
 	if(oSelect.style.display == "block"){
 		oSelect.style.display = "none";
