@@ -1,4 +1,4 @@
-// 点击切换图片开始
+// 点击圆点按钮开始
 var oDot = document.querySelectorAll('#ul1 li');
 for(var i=0;i<oDot.length;i++){
 	oDot[i].onclick = function(){
@@ -8,4 +8,4 @@ for(var i=0;i<oDot.length;i++){
 		this.className = "active";
 	} 
 }
-// 点击切换图片结束
+// 点击圆点按钮结束

@@ -306,7 +306,7 @@
 	border-bottom-right-radius: 10px;
 }
 .content .kind .side .btn .btn-item:last-child a{
-	color: #fff;	
+		color: #fff;
 }
 .content .kind .side .btn .btn-item a{
 	font-size: 18px;
