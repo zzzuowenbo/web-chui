@@ -25,9 +25,9 @@
 					<li class="list-item">
 						<a href="#">论坛首页</a>
 					</li>
-					<li class="list-item bd">
-						<a href="#" class="talk">论坛版块</a>
-						<div class="area clearfix">
+					<li class="list-item bd" id="bd">
+						<a href="#" class="talk" id="talk">论坛版块</a>
+						<div class="area clearfix" id="area">
 			     			<ul class="product">
 								<h1>产品区</h1>
 								<li class="product-item">
@@ -1123,19 +1123,19 @@
 				</div>
 				<div class="content-top-page clearfix">
 					<ul class="page-list">
-						<li class="page-item">1</li>
-						<li class="page-item"><a href="#">2</a></li>
-						<li class="page-item"><a href="#">3</a></li>
-						<li class="page-item"><a href="#">4</a></li>
-						<li class="page-item"><a href="#">5</a></li>
-						<li class="page-item"><a href="#">6</a></li>
-						<li class="page-item"><a href="#">7</a></li>
-						<li class="page-item"><a href="#">8</a></li>
-						<li class="page-item"><a href="#">9</a></li>
-						<li class="page-item"><a href="#">10</a></li>
-						<li class="page-item"><a href="#">... 1092</a></li>
+						<li class="page-item active">1</li>
+						<li class="page-item">2</li>
+						<li class="page-item">3</li>
+						<li class="page-item">4</li>
+						<li class="page-item">5</li>
+						<li class="page-item">6</li>
+						<li class="page-item">7</li>
+						<li class="page-item">8</li>
+						<li class="page-item">9</li>
+						<li class="page-item">10</li>
+						<li class="page-item">... 1092</li>
 						<li class="page-item">
-							<a href="#"><i class="iconfont">&#xf0018;</i></a>
+							<i class="iconfont">&#xf0018;</i>
 						</li>
 					</ul>
 				</div>
@@ -1178,7 +1178,7 @@
 					<div class="publish">
 						<div class="publish-left">
 							验证码
-							<input type="text">
+							<input type="text" id="intext">
 							<a href="#">换一个</a>
 						</div>
 						<div class="publish-right">发表帖子</div>
@@ -1321,5 +1321,6 @@
 		<a href="#"><i class="iconfont">&#xe61e;</i></a>
 	</div>
 </body>
+<script src="js/animation.js"></script>
 <script src="js/zwb-search.js"></script>
 </html>

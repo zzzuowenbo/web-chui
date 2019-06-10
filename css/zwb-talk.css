@@ -1,4 +1,4 @@
-顶部导航区域开始*/
+/*顶部导航区域开始*/
 .header{
 	width: 100%;
 	/*height: 100px;*/
@@ -65,9 +65,9 @@
 .header .top .right .list .bd:hover .talk{
     font-weight: bold;
 }
-.header .top .right .list .bd:hover > .area{
+/*.header .top .right .list .bd:hover > .area{
     height: 536px;
-}
+}*/
 .header .area ul{
 	float: left;
 	margin-left: 80px;
@@ -510,21 +510,23 @@ body{
 	text-align: center;	
 	border: 1px solid #cccccc;
 	border-left: none;
+	font-size: 10px;
+	color: #333;
 }
 .content .left .content-top .content-top-page .page-item:first-child{
-	background: #c13a35;
-	border: 1px solid #c13a35;
+	/*background: #c13a35;*/
+	border: 1px solid #cccccc;
 	border-bottom-left-radius: 5px;
 	border-top-left-radius: 5px;
 	font-size: 10px;
+	/*color: #fff;*/
+}
+.content .left .content-top .content-top-page .page-item.active{
+	background: #c13a35;
 	color: #fff;
+	border-color: #c13a35;
 }
-.content .left .content-top .content-top-page .page-item a{
-	font-size: 10px;
-	color: #333;
-	display: block;
-}
-.content .left .content-top .content-top-page .page-item:hover a{
+.content .left .content-top .content-top-page .page-item:hover{
 	color: blue;
 }
 .content .left .content-top .content-top-page .page-item i{

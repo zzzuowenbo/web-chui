@@ -64,8 +64,11 @@
 	text-align: center;
 	background: #fff;
 	border: 1px solid #dedbdb;
+	box-sizing: border-box;
 	border-radius: 10px;
 	display: none; 
+	height: 0;
+	overflow: hidden;
 }
 .header .header-top .cart span{
 	display: block;
@@ -81,9 +84,9 @@
 	margin-top: 80px;
 	margin-bottom: 20px;
 }
-.header .header-top .header-item1:last-child:hover > .cart{  
+/*.header .header-top .header-item1:last-child:hover > .cart{  
 	display: block; 
-}
+}*/
 .header .header-type{
 	width: 100%;
 	/*height: 40px;*/
@@ -196,11 +199,25 @@
 }
 
 /*点击跳转图片通用内容开始*/
+/*
 .content .kind{
-	/*height: 1080px;*/
 	position: relative;
 	background: #fff;
 	border-top: 1px solid #e0e0e0;
+}
+.content .kind .hide{
+	height: 1100px;
+	width: 100%;
+	position: relative;
+}
+.content .kind .hide li.mod{
+	display: block;
+}
+.content .kind .hide li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
 }
 .content .kind .picture{
     float: left;
@@ -242,9 +259,10 @@
 	line-height: 30px;
 	text-align: center;
 	border-radius: 50%;
-	border: 1px solid #f2f2f2;
+	border: 1px solid #ccc;
 	box-sizing: border-box;
 	z-index: 10;
+	display: block;
 }
 .content .kind .right{
 	position: absolute;
@@ -255,14 +273,15 @@
 	line-height: 30px;
 	text-align: center;
 	border-radius: 50%;
-	border: 1px solid #f2f2f2;
+	border: 1px solid #ccc;
 	box-sizing: border-box;
 	z-index: 10;
+	display: block;
 }
 .content .kind i{
 	display: block;
 	font-size: 12px;
-	color: #f2f2f2;
+	color: #ccc;
 }
 .content .kind .dot{
 	position: absolute;
@@ -281,6 +300,58 @@
 }
 .content .kind .dot .active{
 	background: #666;
+}
+*/
+.content #box{
+	margin: 50px auto;
+}
+.content .kind img{
+	width: 100%;
+	height: 100%;
+}
+.content .kind .leftbtn,.rightbtn{
+	position: absolute;
+	top: 536px;	
+	margin-top: -30px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align:center;
+	font-size: 16px;
+	font-weight: bold;
+	color: gray;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.content .kind .leftbtn{
+	left: 0;
+	margin-left: 60px;
+}
+.content .kind .rightbtn{
+	right: 0;
+	margin-right: 60px;
+}
+.content .kind .bottombtn{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+}
+.content .kind .bottombtn li{
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin-right: 15px;
+	background:  rgba(0,0,0,0.5);
+	border-radius: 50%;
+	cursor: pointer;
+	border: 2px solid gray;
+	box-sizing: border-box;
+}
+.content .kind .bottombtn li.active{
+	background: #fff;
 }
 /*点击跳转图片通用内容结束*/
 
