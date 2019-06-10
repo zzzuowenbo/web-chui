@@ -525,6 +525,7 @@ body{
 	background: #c13a35;
 	color: #fff;
 	border-color: #c13a35;
+	font-weight: bold;
 }
 .content .left .content-top .content-top-page .page-item:hover{
 	color: blue;
