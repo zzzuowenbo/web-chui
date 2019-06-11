@@ -133,6 +133,9 @@
 /*页面顶部区域结束*/
 
 /*页面内容区域开始*/
+.content{
+	margin: 0 auto;
+}
 .content .intro{
     width: 100%;
     /*height: 700px;*/
