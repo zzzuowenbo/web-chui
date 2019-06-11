@@ -52,12 +52,12 @@ function isCoursel(){
 	var oBd = document.getElementById('bd');
 	var oArea = document.getElementById('area');
 	oBd.onmouseenter = function(){
-		animate(oArea,{height:536},true,function(){
+		animate(oArea,{height:536},false,function(){
 			oArea.style.display = "block";
 		});
 	}
 	oBd.onmouseleave = function(){
-		animate(oArea,{height:0},true,function(){
+		animate(oArea,{height:0},false,function(){
 			oArea.style.display = "none";
 		});
 	}
