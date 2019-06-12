@@ -30,6 +30,36 @@ function animation(obj,attr,iTarget){
     },30);		
 }
  
+function animation1(obj,attr,iTarget){
+    //防止用户多次点击
+    clearInterval(obj.timer);
+	obj.timer = setInterval(function(){
+	//获取当前该属性的值
+		var current = parseFloat(getComputedStyle(obj,false)[attr]);
+		if(attr == "opacity"){//判断是否为透明度属性,将其转为百分制
+			current = Math.round(current*100);
+		}
+		if(current < iTarget){//运动方向取值
+        	iSpeed = 8;
+		}else{
+			iSpeed = -8;
+		}
+		if(Math.abs(iTarget - current) < Math.abs(iSpeed)){//动画的终止条件
+        	if(attr == "opacity"){//判断是否为透明度属性
+           		obj.style[attr] = 1;
+        	}else{
+            	obj.style[attr] = iTarget + "px";
+        	}				
+        	clearInterval(obj.timer);
+		}else{//动画不终止
+			if(attr == "opacity"){//判断是否为透明度属性
+				obj.style[attr] = (current + iSpeed) / 100;
+			}else{
+            	obj.style[attr] = current + iSpeed +"px";
+			}				
+		}
+    },30);		
+}
 //获取垂直方向上的滚动距离
 function getScroll(){
     return window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
