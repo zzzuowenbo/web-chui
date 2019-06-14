@@ -39,6 +39,7 @@
 	margin-top: 40px;
 }
 .header .header-top .header-item1{
+	position: relative;
 	float: left;
 	margin-right: 40px;
 	padding-bottom: 30px;
@@ -64,8 +65,8 @@
 }
 .header .header-top .cart{
 	position: absolute;
-	top: 76px;
-	right: 180px;
+	top: 50px;
+	right: 0px;
 	width: 360px;
 	/*height: 320px;*/
 	font-size: 18px;
@@ -600,7 +601,7 @@
 	width: 1232px;
 }
 .content .view img{
-	/*margin-top: -4px;*/
+	margin-top: -4px;
 	/*margin-left: 52px;*/
 }
 /*页面内容区域结束
