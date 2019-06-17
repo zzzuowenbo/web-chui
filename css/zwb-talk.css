@@ -12,12 +12,12 @@
 }
 .header .top .img{
 	float: left;
-    margin-left: 116px;
+    /*margin-left: 116px;*/
     margin-top: 18px;
 }
 .header .top .right{
-	float: left;
-    margin-left: 474px;
+	float: right;
+    /*margin-left: 474px;*/
     position: relative;
 }
 .header .top .list{
@@ -31,6 +31,9 @@
 .header .top .list-item a{
 	font-size: 14px;
 	color: #ffffff;
+}
+.header .top .list-item:nth-child(10){
+	margin-right: 0;
 }
 .header .top .list-item:nth-child(8),
 .header .top .list-item:nth-child(9){
@@ -52,7 +55,7 @@
 	text-decoration: underline;	
 }
 .header .area{
-	width: 1349px;
+	width: 9999px;
 	background: #fafafa;
 	position: absolute;
 	top: 60px;
@@ -113,7 +116,7 @@
 }
 .header .nav .left{
 	float: left;
-	margin-left: 116px;
+	/*margin-left: 116px;*/
 	line-height: 40px;
 }
 .header .nav .left .left-item{
@@ -137,9 +140,10 @@
 	color: #757575;
 }
 .header .nav .search{
+	position: relative;
 	float: right;
 	margin-top: 8px;
-	margin-right: 120px;
+	/*margin-right: 120px;*/
 	/*width: 200px;*/
 	border: 1px solid #c9c9c9;
 	border-radius: 20px;
@@ -181,7 +185,7 @@
 .header .nav .select{
 	position: absolute;
 	top: 35px;
-	right: 260px;
+	left: 0px;
 	display: none;
 	z-index: 3;
 }
@@ -214,24 +218,23 @@
 	/*height: 2924px;*/
 	/*background: green;*/
 	margin-top: 22px;
-	margin-left: 116px;	
+	/*margin-left: 116px;	*/
 	border: 1px solid #dcdcdc;
 	border-radius: 10px;
 	box-sizing: border-box;
 }
-
 .content #box1{
 	position: absolute;
-	top: 109px;
-	left: 182px;
+	top: 110px;
+	left: 65px;
 }
 .content #box2{
 	position: absolute;
 	top: 49px;
-	left: 500px;
+	right: 632px;
 }
 /*选择下拉框通用样式开始*/
-.content{
+.content .continer{
 	position: relative;	
 }
 body{
@@ -544,7 +547,7 @@ body{
 	background: #fff;
 	width: 784px;
 	margin-top: 10px;
-	margin-left: 116px;	
+	/*margin-left: 116px;	*/
 	border: 1px solid #dcdcdc;
 	border-radius: 10px;
 	box-sizing: border-box;
@@ -719,7 +722,7 @@ body{
 .content .type{
 	position: absolute;
 	bottom: 102px;
-	left: 147px;
+	left: 31px;
 	width: 158px;
 	height: 178px;
 	overflow: auto;
@@ -735,7 +738,7 @@ body{
 .content .right{
 	position: absolute;
 	top: 0;
-	right: 116px;
+	right: 0px;
 	width: 320px;
 	/*height: 2224px;*/
 	/*background: pink;*/
@@ -1025,11 +1028,11 @@ body{
 	font-size: 12px;
 	color: #bdbdbd;
 	margin-top: 66px;
-	margin-left: 116px;
+	/*margin-left: 116px;*/
 }
 .footer .footer-right{
-	float: left;
-	margin-left: 670px;
+	float: right;
+	/*margin-left: 670px;*/
 	margin-top: 66px;
 }
 .footer .footer-right .footer-item{
