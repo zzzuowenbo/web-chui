@@ -500,6 +500,7 @@
 .content .app .app-list .app-item:hover{
 	box-shadow: 5px 5px 12px #e5e5e5;
 	transition: all 500ms;
+
 }
 @keyframes sport{
 	from{
@@ -582,7 +583,8 @@
         margin-right: 0;
 	}
 	to{
-        margin-right: -2299px;
+        /*margin-right: -2299px;*/
+        margin-right: -2065px;
 	}
 }
 .content .icon .icon-list .icon-item{
