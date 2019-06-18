@@ -110,6 +110,54 @@
 .beijingyanse{
 	background:#fff;
 }
+.juzhong{
+	width:100%;
+	height:285px;
+	background-color: #fff;
+	box-shadow:42px 1px 6px rgba(0,0,0,0.2);
+	/*display: none;*/
+}
+.juzhong .nav-content{
+	margin-left: auto;
+	margin-right: auto;
+	/*border: 1px solid red;*/
+}
+.nav-content .nav-list{
+	width:200px;
+	height:275px;
+	/*border: 1px solid red;*/
+	/*background-color: yellow;*/
+	float: left;
+	/*display: inline-block;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+.nav-content .nav-list .p1{
+	font-size:12px;
+	color:gray;
+	margin-left:-5px;
+	margin-top:30px;
+	margin-bottom: 15px;
+}
+.nav-content .nav-list .nav-list-item-list{
+	margin-bottom:10px;
+	height:50px;
+	position: relative;
+}
+.nav-content .nav-list .nav-list-item-list .picture{
+	width: 30px;
+	height:40px;
+}
+.nav-content .nav-list .nav-list-item-list .describe{
+	margin-left:30px;
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+.nav-content .nav-list .nav-list-item{
+	height:275px;
+	/*border: 1px solid red;*/
+}
 .daohang2{
 	width:1220px;
 	height: 74px;
@@ -129,7 +177,7 @@
 	margin-left:30px;
 	color:#4c4c4c;
 	font-size:14px;
-	cursor:pointer;
+	cursor:pointer;	
 }
 .daohang2 .item1 .item2:first-child{
 	margin-left:0px;
@@ -179,7 +227,7 @@ input::-webkit-input-placeholder{
 	font-weight:bold;
 	position: absolute;
 	top:50%;
-	margin-top:-11px;
+	margin-top:-25px;
 	right:8px;
 }
 .daohang2 .search3{
