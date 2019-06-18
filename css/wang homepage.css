@@ -41,6 +41,9 @@
 			text-align: center;
 			line-height: 24px;
 		}
+    .box .box_1 a{
+      text-decoration: none;
+    }
 		.box .box_1 i{
 			color: #cc3e39;
 			font-size: 15px;
