@@ -274,6 +274,7 @@ function oJan(){
 			oLaslas.style.top="2400px";
 		}
 		oJh2.style.display = 'block';
+		oLaslas.style.top="2800px";
 	}
 	oJh2.onclick=function(){
 		oPinglun.style.height = '';
