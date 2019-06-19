@@ -110,6 +110,7 @@
 	        box-shadow: 1px 1.5px 1.5px 1.5px #eeeeee;
 	    }
 	    .gaishan{
+	    	width: 808px;
 	    	margin:0 auto;
 	    }
 	    #dropmu span{
@@ -137,7 +138,7 @@
 	    #dropmu dl:nth-child(1){
 	    	float:left; 
 	    	margin-top: 50px;
-	    	margin-left: 540px;
+	    	/*margin-left: 540px;*/
 	    	margin-right: 70px;
 	    }
 	    #dropmu dl:nth-child(3){
@@ -156,7 +157,7 @@
 	    	float:left;
 	    	margin-top: 50px;
 	    	margin-left: 70px; 
-	    	margin-right: 70px;
+	    	/*margin-right: 70px;*/
 	    }
 	     #dropmu dl dt,dd{
 	     	font-size: 16px;
