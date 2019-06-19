@@ -109,23 +109,26 @@
 	        display: none;
 	        box-shadow: 1px 1.5px 1.5px 1.5px #eeeeee;
 	    }
+	    .gaishan{
+	    	text-align: center;
+	    }
 	    #dropmu span{
 	    	float: left;
 	    	background: #ededed;
 	    }
-	    #dropmu span:nth-child(2){
+	    #dropmu span:nth-child(3){
 	    	float: left;
 	    	height: 264px;
 	    	width: 1px;
 	    	background: #ededed;
 	    }
-	    #dropmu span:nth-child(4){
+	    #dropmu span:nth-child(5){
 	    	float: left;
 	    	height: 312px;
 	    	width: 1px;
 	    	background: #ededed;
 	    }
-	    #dropmu span:nth-child(6){
+	    #dropmu span:nth-child(7){
 	    	float: left;
 	    	height: 256px;
 	    	width: 1px;
