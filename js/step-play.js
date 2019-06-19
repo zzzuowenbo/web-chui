@@ -36,7 +36,7 @@ function isShowNav(){
 	var oFix = document.getElementById('fix');
 	var isShow = false;
 	window.onscroll = function(){
-        var iTop = getScroll();      
+        var iTop = getScroll();    
         if(iTop >= 40){
         	if(!isShow){
         		animation(oFix,"height",40);
