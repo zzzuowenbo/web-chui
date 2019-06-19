@@ -149,6 +149,11 @@ function phone(){
     oYi.onclick=function(){
     	oYiJia.style.display = 'none';
     	oPhs.style.display="block";
+    	// oXaiZai.style.backgroundColor = '#eab2b0';
+     //    oXaiZai.style.color = '#e9ece3';
+     //    oShuaJi.style.backgroundColor = '#fefefe';
+     //    oShuaJi.style.color = '#5c5c5c';
+     //    oShuaJi.border= '#fefefe';
     }
     var oNex=document.querySelector(".nex");
 	oNex.onclick=function(){
