@@ -32,9 +32,20 @@ function shensuo(){
 	oI1.onmouseenter=function(){
 		oHave.style.display = 'block';
 		oHave.style.overflow = '';
+		oHaveFa.style.zIndex = 100;
 	}
 	oHaveFa.onmouseleave=function(){
 		oHave.style.display = 'none';
 		oHave.style.overflow = 'hidden';
+	}
+	var oBox2=document.querySelector(".box2");
+	document.onmousewheel=function(){
+		oBox2.style.position = 'fixed';
+		oBox2.style.top="0";
+		if(document.documentElement.scrollTop<72){
+			oBox2.style.position = 'absolute';
+			oBox2.style.top="92px";
+		}
+		console.log(document.documentElement.scrollTop);
 	}
 }

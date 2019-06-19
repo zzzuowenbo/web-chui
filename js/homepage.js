@@ -268,12 +268,12 @@ function oJan(){
 	oJian1.onclick=function(){
 		oPinglun.style.height = '57px';
 		oPinglun.style.overflow = 'hidden';
-		oJh2.style.display = 'block';
 		if(oJian2fa.style.display =='block'){
 			oLaslas.style.top="2800px";
 		}else if(oJian2fa.style.display =='none'){
 			oLaslas.style.top="2400px";
 		}
+		oJh2.style.display = 'block';
 	}
 	oJh2.onclick=function(){
 		oPinglun.style.height = '';
