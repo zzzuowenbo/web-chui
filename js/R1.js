@@ -26,4 +26,15 @@ function shensuo(){
 		oOS.style.marginRight = '38px';
 		oZaiXian.style.marginLeft="56px";
 	}
+	var oI1=document.querySelector(".i1");
+	var oHaveFa=document.querySelector(".hovefa");
+	var oHave=document.querySelector(".hove");
+	oI1.onmouseenter=function(){
+		oHave.style.display = 'block';
+		oHave.style.overflow = '';
+	}
+	oHaveFa.onmouseleave=function(){
+		oHave.style.display = 'none';
+		oHave.style.overflow = 'hidden';
+	}
 }
