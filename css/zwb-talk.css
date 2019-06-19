@@ -55,11 +55,11 @@
 	text-decoration: underline;	
 }
 .header .area{
-	width: 9999px;
+	width: 1500px;
 	background: #fafafa;
 	position: absolute;
 	top: 60px;
-	left: -618px;	
+	left: -750px;	
 	border-bottom: 1px solid #dcdcdc;
 	overflow: hidden;
 	z-index: 10;

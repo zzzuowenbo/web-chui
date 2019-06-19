@@ -4,6 +4,15 @@
 	width:100%;
 	background:#262729;
 }
+.daohang1 .center a{
+	text-decoration: none;
+	font-size:11px;
+	color:#c1c2c2;
+}
+.daohang1 .center a:hover{
+	color:#fff;
+	cursor:pointer;
+}
 .daohang1 .left{
 	width:182px;
 	height:100%;
