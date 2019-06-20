@@ -48,5 +48,17 @@ function shensuo(){
 			oBox2.style.top="92px";
 		}
 	}
-	
+	var timer=null;
+	var iSpeed=0;
+	var odifixed=document.querySelector(".difixed");
+	odifixed.onclick=function(){
+		console.log(11)
+		var sudu=iSpeed++
+		timer=setInterval(function(){
+			document.documentElement.scrollTop-sudu;
+		}, 100)
+		if(document.documentElement.scrollTop==0){
+			clearInterval(timer);
+		}
+	}
 }
