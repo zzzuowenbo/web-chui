@@ -115,3 +115,21 @@ function handleShopping(){
 		oHuaDong.style.marginLeft="0";
 	}
 }
+
+
+//document.getElementById("message").setAttribute("placeholder","新文本内容");
+//搜索框
+handleSerach();
+function handleSerach(){
+	var oSearch1=document.querySelector('.daohang2 .search1')
+	// console.log(oSearch1.placeholer.value)
+	oSearch1.onfocus=function(){
+		oSearch1.placeholer="请输入搜索的商品";
+	}
+}
+
+//滑动时固定顶部导航栏
+handleScrollNav()
+function handleScrollNav(){
+	
+}

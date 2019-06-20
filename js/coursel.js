@@ -84,12 +84,10 @@ function Coursel(opation){
 			if(_this.now>_this.img.length-1){//右边按钮移动条件
 				_this.now=0;
 			}
-			console.log(_this.now);
 			_this.tab()
 		}
 		this.leftBtn.onclick=function(){//左边按钮移动条件
 			_this.now--
-			console.log(_this.now);
 			if(_this.now<0){
 				_this.now=_this.img.length-1;
 			}
