@@ -34,14 +34,9 @@
 			line-height: 60px;
 		}
 		.box .box_1{
-			width: 24px;
-			height: 24px;
-			background-color: #fff;
-			border: 1px solid #fff;
 			float: left;
 			margin-top: 18px;
 			border-radius: 50%;
-			text-align: center;
 			line-height: 24px;
 			cursor: pointer;
 		}
@@ -1303,7 +1298,12 @@
 			width: 50px;
 			line-height: 28px;
 			text-align: center;
+			font-size: 12px;
 			border: 1px solid #cccccc; 
+		}
+		.zuison div:hover{
+			cursor: pointer;
+			color: #8a8fd0;
 		}
 		.zuison div:nth-child(1){
 			background: #c13a35;
