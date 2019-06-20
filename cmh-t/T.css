@@ -88,7 +88,8 @@
 }
 /*三个内容盒子*/
 .coxb{
-	width: 27%;
+	/*width: 27%;*/
+	width: 30%;
 	height: 37px;
 	line-height: 37px;
 	background: #faf9f7;
@@ -261,7 +262,8 @@
 		}
 		.carousel{
 			width: 1226px;
-			height: 460px;
+			/*height: 460px;*/
+			height: 1000px;
 			position: relative;
 			margin: 100px auto;
 		}
@@ -298,7 +300,8 @@
 		}
 		.carousel .carousel-imgs-item img{
 			width: 100%;
-			height: 460px;
+			/*height: 460px;*/
+			height: 100%;
 		}
 		.carousel .carousel-btn{
 			position: absolute;
