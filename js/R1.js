@@ -37,6 +37,7 @@ function shensuo(){
 	oHaveFa.onmouseleave=function(){
 		oHave.style.display = 'none';
 		oHave.style.overflow = 'hidden';
+		oHaveFa.style.zIndex = 1;
 	}
 	var oBox2=document.querySelector(".box2");
 	var oBox=document.querySelector(".box");
@@ -52,10 +53,11 @@ function shensuo(){
 	var iSpeed=0;
 	var odifixed=document.querySelector(".difixed");
 	odifixed.onclick=function(){
+		clearInterval(timer)
 		console.log(11)
-		var sudu=iSpeed++
+		// var sudu=iSpeed+5;
 		timer=setInterval(function(){
-			document.documentElement.scrollTop-sudu;
+			document.documentElement.scrollTop--;
 		}, 100)
 		if(document.documentElement.scrollTop==0){
 			clearInterval(timer);
