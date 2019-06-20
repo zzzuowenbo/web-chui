@@ -2,6 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+	height: 3000px;
+}
 /*大盒子*/
 .box{
 	width: 94%;
@@ -74,6 +77,10 @@
 	height: 37px;
 	background: #faf9f7;
 	margin: 0 auto;
+	position: absolute;
+	top:90px;
+	left: 40px;
+
 }
 .coxa{
 	width: 91%;
@@ -114,7 +121,7 @@
 .coxe li{
 	list-style: none;
 	float: left;
-	margin-right: 24px;
+	margin-right: 23px;
 	font-size: 14px;
 	color: #9c9b9a;
 }
@@ -258,12 +265,12 @@
 			width: 1226px;
 			height: 460px;
 			position: relative;
-			margin: 100px auto;
+			margin: 35px auto;
 		}
 		.carousel .carousel-imgs-item{
 			position: absolute;
 			top:0;
-			left:0;
+			left:-23px;
 			height: 100%;
 			transition: all 0.5s;
 		}
@@ -292,7 +299,7 @@
 				right:0;
 		}
 		.carousel .carousel-imgs-item img{
-			width: 100%;
+			width: 1270px;
 			height: 460px;
 		}
 		.carousel .carousel-btn{

@@ -1,0 +1,79 @@
+<style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        #box{
+            width: 1920px;
+            height: 1080px;
+            margin: 1px auto;
+            position: relative;
+            border: 1px soild block;
+            overflow: hidden;
+        }
+        #box #list{
+            position: absolute;
+            width: 13440px;
+            height: 1080px;
+            z-index: 1;
+        }
+        #box #list li{
+            float: left;
+            height: 1080px;
+            width: 1920px;
+        }
+        #buttons {
+            position: absolute;
+            left: 910px;
+            bottom: 50px;
+            z-index: 2;
+            height: 30px;
+            width: 300px;
+        }
+        #buttons li {
+            float: left;
+            margin-right: 20px;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background: #333;
+            cursor: pointer;
+            list-style: none;
+        }
+        #buttons .on {
+            background: orangered;
+        }
+        .arrow {
+            position: absolute;
+            top: 520px;
+            z-index: 2;
+            display: none;
+            width: 200px;
+            height: 200px;
+            font-size: 100px;
+            /*font-weight: bold;*/
+            line-height: 200px;
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        #box:hover .arrow {
+            display: block;
+        }
+
+        #prev {
+            left: 20px;
+        }
+
+        #next {
+            right: 20px;
+        }
+    </style>

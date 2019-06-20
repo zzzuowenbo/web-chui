@@ -55,3 +55,13 @@
 		timer = setInterval(oRightArrow.onclick,5000);
 	}
 // 结束
+var boc = document.querySelector(".cox");
+window.onscroll = function(){
+	boc.style.position = 'fixed';
+	boc.style.top=0;
+	console.log(document.documentElement.scrollTop)
+	if(document.documentElement.scrollTop<90){
+		boc.style.position = 'absolute';
+		boc.style.top="90px";
+	}
+};
