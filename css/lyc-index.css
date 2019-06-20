@@ -3,6 +3,15 @@
 	height:45px;
 	background:#262729;
 }
+.daohang1 .center a{
+	font-size:11px;
+	color:#c1c2c2;
+	text-decoration: none;
+}
+.daohang1 .center a:hover{
+	cursor:pointer;
+	color:#fff;
+}
 .daohang1 .left{
 	width:182px;
 	height:100%;
@@ -26,8 +35,7 @@
 	color:#27282a;
 }
 .daohang1 .center{
-	width:1222px;
-	height:45px;
+	/*border: 1px solid red;*/
 	float:left;
 }
 .daohang1 .center li{
@@ -72,9 +80,6 @@
 	padding-top: 100px;
 	opacity: 0;
 }
-.daohang1 .right .right2 .cart{
-
-}
 .daohang1 .right .right2 .cart1{
 	font-size: 50px;
 	font-weight: bolder;
@@ -109,17 +114,86 @@
 /*导航栏二开始*/
 .beijingyanse{
 	background:#fff;
+	position: relative;
+	height:60px;
 }
-.daohang2{
-	width:1220px;
-	height: 74px;
+.juzhong{
+	width:100%;
+	height:0px;
+	background-color: #fff;
+	box-shadow:42px 1px 6px rgba(0,0,0,0.2);
+	margin:0 auto;
+	overflow: hidden;
+	transition: all 0.3s;
+	z-index: 100;
+	position: absolute;
+	top:60px;
+	left: 0;
+}
+.juzhong .juzhong1{
+	width:1000px;
+	margin:0 auto;
+}
+.juzhong .nav-content{
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+	cursor:pointer;
+}
+.nav-content .nav-list{
+	width:200px;
+	height:285px;
+	float: left;
 	margin-left: auto;
 	margin-right: auto;
 }
+.nav-content .nav-list .p1{
+	font-size:12px;
+	color:gray;
+	margin-left:-5px;
+	margin-top:30px;
+	margin-bottom: 15px;
+}
+.nav-content .nav-list .nav-list-item-list{
+	margin-bottom:10px;
+	height:50px;
+	position: relative;
+}
+.nav-content .nav-list .nav-list-item-list .picture{
+	width: 30px;
+	height:40px;
+}
+.nav-content .nav-list .nav-list-item-list .describe{
+	margin-left:30px;
+	font-size:12px;
+	font-weight:bold;
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+.nav-content .nav-list .nav-list-item{
+	height:275px;
+}
+.daohang2{
+	width:1220px;
+	height: 60px;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	top:0px;
+	left:50%;
+	margin-left:-610px;
+}
 .daohang2 .item1{
-	height:75px;
-	line-height:75px;
+	height:60px;
+	line-height:60px;
 	float:left;
+}
+.daohang2 .item1 a{
+	text-decoration: none;
+	color:#4c4c4c;
+	font-size:14px;
 }
 .daohang2 .container{
 	position:relative;
@@ -129,7 +203,7 @@
 	margin-left:30px;
 	color:#4c4c4c;
 	font-size:14px;
-	cursor:pointer;
+	cursor:pointer;	
 }
 .daohang2 .item1 .item2:first-child{
 	margin-left:0px;
@@ -139,13 +213,10 @@
 	color:#6f86d1;
 }
 .daohang2 .search{
-/*	position: absolute;
-	top:50%;
-	margin-top:-17px;
-	right:0px;*/
 	float:right;
-	margin-top:22px;
+	margin-top:12px;
 	position: relative;
+	z-index: 99999;
 }
 .daohang2 .search1{
 	height:35px;
@@ -153,7 +224,11 @@
 	border:1px solid #ececec;
 	border-radius:25px;
 	padding-left:20px;
+	z-index: 9999;
 }
+/*.daohang2 .search1:focus{
+	placeholder="请输入搜索的商品"
+}*/
 input::-webkit-input-placeholder{
 	font-size:12px;
 	color:gray;
@@ -179,7 +254,7 @@ input::-webkit-input-placeholder{
 	font-weight:bold;
 	position: absolute;
 	top:50%;
-	margin-top:-11px;
+	margin-top:-10px;
 	right:8px;
 }
 .daohang2 .search3{
@@ -196,7 +271,9 @@ input::-webkit-input-placeholder{
 	left: 0px;
 }
 .daohang2 .search3 li{
-	margin-top:12px;
+	height:25px;
+	line-height:25px;
+	margin-top:8px;
 	padding-left:20px;
 	font-size:14px;
 	color:#5b5a5c;
@@ -207,17 +284,61 @@ input::-webkit-input-placeholder{
 }
 .daohang2 .search3 li:hover{
 	color:#3965cc;
+	background:lightgray;
 }
 /*导航栏二结束*/
 
 /*展示区开始*/
 
-.zhanshi .img1{
+#coursel{
 	cursor:pointer;
 	margin-top:25px;
+	/*display: none;*/
+}
+.zhanshi #courselimg{
+	width: 100%;
+	height: 100%;
+}
+.zhanshi #coursel.leftBtn1,.rightBtn1{
+	position:absolute;
+	top:50%;
+	width:50px;
+	height:70px;
+	line-height: 70px;
+	text-align: center;
+	font-size:30px;
+	color:#fff;
+	background-color: rgba(0,0,0,0.2);
+}
+.zhanshi #coursel.leftBtn1{
+	left:0;
+	z-index: 999;
+	display: none;
+}
+.zhanshi #coursel.rightBtn1{
+	right:0;
+	z-index: 999;
+	display: none;
+}
+.zhanshi #coursel.oUlBottom{
+	position: absolute;
+	bottom:20px;
+	left: 50%;
+}
+.zhanshi #coursel.oUlBottom li{
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background-color:rgba(0,0,0,0.5);
+	float: left;
+	margin-right:20px;
+	cursor: pointer;
+}
+.zhanshi #coursel.oUlBottom li.active{
+	background-color:rgba(251,0,0,0.5);
 }
 .zhanshi .fenqu1{
-	margin-top:28px;
+	margin-top:60px;
 	border-top:1px solid #dbdbdb;
 }
 .zhanshi .fenqu1 li{
@@ -289,6 +410,9 @@ input::-webkit-input-placeholder{
 /*热门商品区域开始*/
 .remen .container{
 	margin-top:26px;
+	overflow: hidden;
+	transition: all 0.3s;
+
 }
 .remen .all{
 	border:1px solid white;
@@ -297,17 +421,24 @@ input::-webkit-input-placeholder{
 	border-bottom: 1px solid #e1e1e1;
 	background:#fafafa;
 }
+.remen .remen1 .icir2{
+	transform:rotateZ(180deg);
+}
 .remen .remen2{
 	height:431px;
+	width:2440px;
 	background:#fff;
 	border-bottom-right-radius:10px;
 	border-bottom-left-radius:10px;
+	transition:all 300ms;
 }
 .remen .remen2 .remen3{
 	float:left;
 	cursor:pointer;
 	transition:all 300ms;
 	position: relative;
+	/*border: 1px solid red;*/
+	width:305px;
 }
 .remen .remen2 .remen3:hover{
 	transform:translateY(2px);
@@ -424,6 +555,7 @@ input::-webkit-input-placeholder{
 	left:108px;
 	display:none;
 }
+
 /*热门商品区域结束*/
 
 /*坚果手机及配件区域开始*/
@@ -1642,6 +1774,11 @@ input::-webkit-input-placeholder{
 	margin-top:15px;
 	margin-bottom:15px;
 	margin-left:29px;
+	font-size:13px;
+	color:#999999;
+}
+.luntan .luntan1 .col-right1 .p2 a{
+	text-decoration: none;
 	font-size:13px;
 	color:#999999;
 }

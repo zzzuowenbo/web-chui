@@ -30,3 +30,24 @@ function isCart(){
 	}
 }
 
+//顶部导航显示部分
+isShowNav();
+function isShowNav(){
+	var oFix = document.getElementById('fix');
+	var isShow = false;
+	oFix.style.height = 0;
+	window.onscroll = function(){
+        var iTop = getScroll();    
+        if(iTop >= 40){
+        	if(!isShow){
+        		animation(oFix,"height",40);
+        		isShow = true;
+        	}       	
+        }else{
+        	if(isShow){
+        		animation(oFix,"height",0);
+        		isShow = false;
+        	}        	
+        }
+	}
+}

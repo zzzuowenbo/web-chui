@@ -1,19 +1,28 @@
-//1.处理购物车
+//购物车
 handlecart();
 function handlecart(){
-	oCart=document.querySelector('.daohang1 .right .cart-box');
-	oRight2=document.querySelector('.daohang1 .right .right2');
-	oCartContent=document.querySelector('.top .cart .cart-content');
-	oEmptycart=document.querySelector('.top .cart .empty-cart')
-	console.log(oCartContent)
-
-	oCart.onmouseenter=function(){
-		oRight2.style.display='block';
-		animation1(oRight2,'opacity',100)
+	oCart=document.querySelectorAll('.daohang1 .right .right1 i');
+	oCartBox=document.querySelector('.daohang1 .right .cart-box');
+	var hideTimer=0;
+	console.log(oCartBox)
+	oCart[1].onmouseenter=function(){
+		oCartBox.style.display='block';
+		animation1(oCartBox,'opacity',100);
 	}
-	oCart.onmouseleave=function(){
-		oRight2.style.display='none';
-		animation1(oRight2,'opacity',0)
+	oCart[1].onmouseleave=function(){
+		hideTimer=setTimeout(function(){
+			oCartBox.style.display='none';
+			animation1(oCartBox,'opacity',0)	
+		},1000)
+		oCartBox.onmouseenter=function(){
+			clearTimeout(hideTimer);
+		}
+		oCartBox.onmouseleave=function(){
+			setTimeout(function(){
+				oCartBox.style.display='none';
+				animation1(oCartBox,'opacity',0)
+			},250)
+		}
 	}
 }
 //2.处理下拉列表
@@ -87,43 +96,6 @@ function handleNav(){
 	oBigBox.onmouseleave=function(){
 		oBigBox.style.height="0px";
 	}
-}
-//加载轮播图
-handleCoursel();
-function handleCoursel(){
-	new Coursel({//传入一个对象作为参数
-		id:'coursel',
-		width:1236,
-		height:461,
-		img:["image/lyc-img/coursel1.png","image/lyc-img/coursel2.png"],
-		playtime:2000
-	});
-}
 
-//滑动商品
-handleShopping();
-function handleShopping(){
-	var oLeft=document.querySelector('.remen .remen1 .col-right .icir1');
-	var oRight=document.querySelector('.remen .remen1 .col-right .icir2');
-	var oHuaDong=document.querySelector('.remen .remen2');
-	console.log(oLeft)
-
-	oLeft.onclick=function(){
-		oHuaDong.style.marginLeft="-1220px";
-	}
-	oRight.onclick=function(){
-		oHuaDong.style.marginLeft="0";
-	}
-}
-
-
-//document.getElementById("message").setAttribute("placeholder","新文本内容");
-//搜索框
-handleSerach();
-function handleSerach(){
-	var oSearch1=document.querySelector('.daohang2 .search1')
-	// console.log(oSearch1.placeholer.value)
-	oSearch1.onfocus=function(){
-		oSearch1.placeholer="请输入搜索的商品";
-	}
+	
 }
