@@ -114,8 +114,6 @@
 /*导航栏二开始*/
 .beijingyanse{
 	background:#fff;
-	/*box-sizing: border-box;*/
-	/*overflow: hidden;*/
 	position: relative;
 	height:60px;
 }
@@ -179,7 +177,6 @@
 .daohang2{
 	width:1220px;
 	height: 60px;
-	/*border: 1px solid red;*/
 	background-color: #fff;
 	margin-left: auto;
 	margin-right: auto;

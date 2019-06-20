@@ -58,7 +58,7 @@ function animation1(obj,attr,iTarget){
             	obj.style[attr] = current + iSpeed +"px";
 			}				
 		}
-    },30);		
+    },50);		
 }
 //获取垂直方向上的滚动距离
 function getScroll(){

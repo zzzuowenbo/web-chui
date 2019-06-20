@@ -127,9 +127,3 @@ function handleSerach(){
 		oSearch1.placeholer="请输入搜索的商品";
 	}
 }
-
-//滑动时固定顶部导航栏
-handleScrollNav()
-function handleScrollNav(){
-	
-}
