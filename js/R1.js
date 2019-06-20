@@ -39,13 +39,14 @@ function shensuo(){
 		oHave.style.overflow = 'hidden';
 	}
 	var oBox2=document.querySelector(".box2");
-	document.onmousewheel=function(){
+	var oBox=document.querySelector(".box");
+	window.onscroll=function(){
 		oBox2.style.position = 'fixed';
 		oBox2.style.top="0";
-		if(document.documentElement.scrollTop<72){
+		if(document.documentElement.scrollTop<92){
 			oBox2.style.position = 'absolute';
 			oBox2.style.top="92px";
 		}
-		console.log(document.documentElement.scrollTop);
 	}
+	
 }
