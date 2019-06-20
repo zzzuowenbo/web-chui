@@ -292,5 +292,19 @@ function oJan(){
 		}
 		
 	}
+	//底部固定js
+	var scr=document.documentElement.scrollTop;
+	var odifixed=document.querySelector(".difixed");
+	window.onscroll=function(){
+		if(document.documentElement.scrollTop<1100){
+			   odifixed.style.display = 'none';
+		}
+		if(document.documentElement.scrollTop>1100){
+			 odifixed.style.display = 'block';
+		}
+	}
+	odifixed.onclick=function(){
+		document.documentElement.scrollTop=0;
+	}
 }
 

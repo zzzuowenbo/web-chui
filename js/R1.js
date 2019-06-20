@@ -48,19 +48,20 @@ function shensuo(){
 			oBox2.style.position = 'absolute';
 			oBox2.style.top="92px";
 		}
+		console.log(document.documentElement.scrollTop)
 	}
-	var timer=null;
-	var iSpeed=0;
+	// var scr=document.documentElement.scrollTop;
 	var odifixed=document.querySelector(".difixed");
-	odifixed.onclick=function(){
-		clearInterval(timer)
-		console.log(11)
-		// var sudu=iSpeed+5;
-		timer=setInterval(function(){
-			document.documentElement.scrollTop--;
-		}, 100)
-		if(document.documentElement.scrollTop==0){
-			clearInterval(timer);
+	window.onscroll=function(){
+		if(document.documentElement.scrollTop<1100){
+			   odifixed.style.display = 'none';
+		}
+		if(document.documentElement.scrollTop>1100){
+			 odifixed.style.display = 'block';
 		}
 	}
+	// setInterval(odifixed.onclick=function(){
+	// 	document.documentElement.scrollTop=document.documentElement.scrollTop-5
+	// } ,300 )
+	
 }
