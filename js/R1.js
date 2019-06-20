@@ -37,6 +37,7 @@ function shensuo(){
 	oHaveFa.onmouseleave=function(){
 		oHave.style.display = 'none';
 		oHave.style.overflow = 'hidden';
+		oHaveFa.style.zIndex = 1;
 	}
 	var oBox2=document.querySelector(".box2");
 	var oBox=document.querySelector(".box");
@@ -47,6 +48,25 @@ function shensuo(){
 			oBox2.style.position = 'absolute';
 			oBox2.style.top="92px";
 		}
+		var odifixed=document.querySelector(".difixed");
+		if(document.documentElement.scrollTop<1100){
+			   odifixed.style.display = 'none';
+		}
+		if(document.documentElement.scrollTop>1100){
+			 odifixed.style.display = 'block';
+		}
 	}
-	
+	var timer=null;
+	var odifixed=document.querySelector(".difixed");
+	odifixed.onclick=function(){
+		clearInterval(timer);
+		timer=setInterval(function(){
+			if(document.documentElement.scrollTop==0){
+			clearInterval(timer);
+			}
+			document.documentElement.scrollTop=document.documentElement.scrollTop-400;
+		}
+	,30)
+	}
+
 }

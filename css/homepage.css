@@ -34,14 +34,9 @@
 			line-height: 60px;
 		}
 		.box .box_1{
-			width: 24px;
-			height: 24px;
-			background-color: #fff;
-			border: 1px solid #fff;
 			float: left;
 			margin-top: 18px;
 			border-radius: 50%;
-			text-align: center;
 			line-height: 24px;
 			cursor: pointer;
 		}
@@ -1303,7 +1298,12 @@
 			width: 50px;
 			line-height: 28px;
 			text-align: center;
+			font-size: 12px;
 			border: 1px solid #cccccc; 
+		}
+		.zuison div:hover{
+			cursor: pointer;
+			color: #8a8fd0;
 		}
 		.zuison div:nth-child(1){
 			background: #c13a35;
@@ -1424,5 +1424,38 @@
 			top:149px;
 			left: 0;
 			background: #fafafa;
+		}
+		.difixed{
+			position: fixed;
+			right: 39px;
+			bottom: 0px;
+			width: 45px;
+			height: 45px;
+			cursor: pointer;
+			display: none;
+			border: 1px solid #e7e7e7;
+			border-radius: 6px 6px;
+		}
+		.difixed:hover{
+			border: 1px solid #dadada;
+		}
+		.dison{
+			margin:0 auto;
+			margin-top: 17px;
+			width: 11px;
+			height: 2px;
+			background: #dadada;
+		}
+		.dison:hover{
+			background: #d5d2d2;
+		}
+		.dison2{
+			transform: rotate(180deg);
+			margin-top: -2px;
+			margin-right: 14px;
+			color: #dadada;
+		}
+		.dison2:hover{
+			color: #d5d2d2;
 		}
 		
