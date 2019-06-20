@@ -35,13 +35,52 @@ oShare.onclick = function(){
 // 其他标签下拉框结束
 
 // 选择主题分类下拉框开始
+// var oType = document.getElementById('type');
+// var oFrame = document.getElementById('frame');
+// oFrame.onclick = function(){
+// 	if(oType.style.display == "block"){
+// 		oType.style.display = "none";
+// 	}else{
+// 		oType.style.display = "block";
+//     }
+// }
 var oType = document.getElementById('type');
 var oFrame = document.getElementById('frame');
+var oSpan = document.querySelector('.frame span');
+var pull = document.querySelectorAll('.pull .box-item a');
 oFrame.onclick = function(){
 	if(oType.style.display == "block"){
 		oType.style.display = "none";
 	}else{
 		oType.style.display = "block";
+    }
+    pull[0].onclick = function(){
+    	oSpan.innerHTML = "讨论&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    	oType.style.display = "none";
+    }
+    pull[1].onclick = function(){
+    	oSpan.innerHTML = "教程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    	oType.style.display = "none";
+    }
+    pull[2].onclick = function(){
+    	oSpan.innerHTML = "问答&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    	oType.style.display = "none";
+    }
+    pull[3].onclick = function(){
+    	oSpan.innerHTML = "开箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    	oType.style.display = "none";
+    }
+    pull[4].onclick = function(){
+    	oSpan.innerHTML = "分享&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    	oType.style.display = "none";
+    }
+    pull[5].onclick = function(){
+    	oSpan.innerHTML = "软件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    	oType.style.display = "none";
+    }
+    pull[6].onclick = function(){
+    	oSpan.innerHTML = "游戏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    	oType.style.display = "none";
     }
 }
 // 选择主题分类下拉框结束
