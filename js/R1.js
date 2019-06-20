@@ -48,11 +48,7 @@ function shensuo(){
 			oBox2.style.position = 'absolute';
 			oBox2.style.top="92px";
 		}
-		console.log(document.documentElement.scrollTop)
-	}
-	// var scr=document.documentElement.scrollTop;
-	var odifixed=document.querySelector(".difixed");
-	window.onscroll=function(){
+		var odifixed=document.querySelector(".difixed");
 		if(document.documentElement.scrollTop<1100){
 			   odifixed.style.display = 'none';
 		}
@@ -60,8 +56,17 @@ function shensuo(){
 			 odifixed.style.display = 'block';
 		}
 	}
-	// setInterval(odifixed.onclick=function(){
-	// 	document.documentElement.scrollTop=document.documentElement.scrollTop-5
-	// } ,300 )
-	
+	var timer=null;
+	var odifixed=document.querySelector(".difixed");
+	odifixed.onclick=function(){
+		clearInterval(timer);
+		timer=setInterval(function(){
+			if(document.documentElement.scrollTop==0){
+			clearInterval(timer);
+			}
+			document.documentElement.scrollTop=document.documentElement.scrollTop-400;
+		}
+	,30)
+	}
+
 }

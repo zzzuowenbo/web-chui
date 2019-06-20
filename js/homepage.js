@@ -303,8 +303,16 @@ function oJan(){
 			 odifixed.style.display = 'block';
 		}
 	}
+	var timer=null;
 	odifixed.onclick=function(){
-		document.documentElement.scrollTop=0;
+		clearInterval(timer);
+		timer=setInterval(function(){
+			if(document.documentElement.scrollTop==0){
+			clearInterval(timer);
+			}
+			document.documentElement.scrollTop=document.documentElement.scrollTop-400;
+		}
+		,30)
 	}
 }
 
