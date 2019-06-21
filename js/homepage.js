@@ -314,5 +314,23 @@ function oJan(){
 		}
 		,30)
 	}
+	//搜索切换用户
+	var oQie=document.querySelector(".qie");
+	var oSou=document.querySelector(".sou");
+	var oHuan=document.querySelector(".huan");
+	var oHuan1=document.querySelector(".huan1");
+	oQie.onclick=function(){
+		oSou.style.display = 'block';
+	}
+	oSou.onmouseenter=function(){
+		oHuan.style.color = '#5d58e7';
+	}
+	oSou.onmouseleave=function(){
+		oSou.style.display = 'none';
+		oHuan.style.color = '#3c3f34';
+	}
+	oHuan.onclick=function(){
+		oHuan1.innerHTML="用户";
+	}
 }
 

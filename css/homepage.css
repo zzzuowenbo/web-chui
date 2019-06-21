@@ -209,6 +209,7 @@
 	    	box-shadow: 0.5px 0.5px 0.5px 0.5px #e8e8e8;
 	    }
 	    .box2_1{
+	    	position: relative;
 	    	width: 1120px;
 			height: 38px;
 			margin:0px auto;
@@ -242,6 +243,12 @@
 	    	font-size: 12px;
 	    	cursor: pointer;
 	    }
+	    .box2_1 p:nth-child(2) a{
+	    	color: #757575;
+	    }
+	    .box2_1 p:nth-child(2) a:hover{
+	    	text-decoration: underline;
+	    }
 	    .box2_1 i{
 	    	margin-right: 4px;
 	    	float:left;
@@ -259,6 +266,28 @@
 			outline: none;
 			margin-top: 2px;
 			font-size: 12px;
+	    }
+	    .box2 .box2_1 .sou{
+	    	position: absolute;
+	    	top: 30px;
+			right: 128px;
+			width: 68px;
+			height: 32px;
+			z-index: 1000;
+			line-height: 32px;
+			background: #fefefe;
+			display: none;
+			box-shadow:0.5px 0.5px 0.5px 0.5px #a9a9a9; 
+			border: 1px solid #dedede;
+			border-radius: 0 0; 
+	    }
+	    .box2 .box2_1 .sou:hover{
+	    	cursor: pointer;
+	    }
+	    .box2 .box2_1 .sou .huan{
+			position: absolute;
+			top:0;
+			left:5px;
 	    }
 	    /*搜索框完*/
 	    .box3{
