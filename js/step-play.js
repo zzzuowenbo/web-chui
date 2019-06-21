@@ -35,6 +35,7 @@ isShowNav();
 function isShowNav(){
 	var oFix = document.getElementById('fix');
 	var isShow = false;
+	oFix.style.height = 0;
 	window.onscroll = function(){
         var iTop = getScroll();    
         if(iTop >= 40){
