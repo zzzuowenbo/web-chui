@@ -195,6 +195,7 @@
 	position: absolute;
 	top:35px;
 	right: 0px;
+	z-index:999999;
 }
 .daohang2 .search3 li{
 	margin-top:12px;
@@ -221,10 +222,11 @@
 	margin:0 auto;
 	overflow: hidden;
 	transition: all 0.3s;
-	z-index: 999999;
+	z-index: 99;
 	position: absolute;
 	top:75px;
 	left: 0px;
+	cursor:pointer;
 }
 .juzhong .juzhong1{
 	width:1000px;

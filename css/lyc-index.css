@@ -309,6 +309,7 @@ input::-webkit-input-placeholder{
 	font-size:30px;
 	color:#fff;
 	background-color: rgba(0,0,0,0.2);
+	display: none;
 }
 .zhanshi #coursel.leftBtn1{
 	left:0;
@@ -320,21 +321,23 @@ input::-webkit-input-placeholder{
 	z-index: 999;
 	display: none;
 }
-.zhanshi #coursel.oUlBottom{
+.zhanshi #coursel .oUlBottom{
 	position: absolute;
-	bottom:20px;
+	width:100px;
+	height:100px;
+	/*background-color: pink;*/
 	left: 50%;
 }
-.zhanshi #coursel.oUlBottom li{
-	width:50px;
-	height:50px;
+.zhanshi #coursel .oUlBottom li{
+	width:10px;
+	height:10px;
 	border-radius:50%;
 	background-color:rgba(0,0,0,0.5);
 	float: left;
 	margin-right:20px;
 	cursor: pointer;
 }
-.zhanshi #coursel.oUlBottom li.active{
+.zhanshi #coursel .oUlBottom li.active{
 	background-color:rgba(251,0,0,0.5);
 }
 .zhanshi .fenqu1{
